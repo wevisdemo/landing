@@ -5,6 +5,12 @@ export default defineConfig({
 		fontFamily: {
 			sans: ['Anuphan', 'sans-serif'],
 			serif: ['Kondolar Thai', 'serif']
+		},
+		colors: {
+			black: 'black',
+			white: 'white',
+			ultramarine: '#3904E9',
+			mint: '#A5EBD7'
 		}
 	},
 	shortcuts: {
