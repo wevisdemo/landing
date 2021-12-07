@@ -1,7 +1,7 @@
 <script lang="ts">
 	import enterView from 'enter-view';
 	import { onMount } from 'svelte';
-	import BackgroundAnimation from '../background-animation.svelte';
+	import BackgroundAnimation from './background-animation.svelte';
 	import Lottie from '../lottie.svelte';
 
 	let container: HTMLDivElement;

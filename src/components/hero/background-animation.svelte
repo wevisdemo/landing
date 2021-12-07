@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { AnimationItem } from 'lottie-web';
 
-	import Lottie from './lottie.svelte';
+	import Lottie from '../lottie.svelte';
 
 	export let path: string;
 	export let progress = 0;
