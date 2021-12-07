@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import BackgroundAnimation from './background-animation.svelte';
 	import Lottie from '../lottie.svelte';
+	import ExternalLink from '../external-link.svelte';
 
 	let container: HTMLDivElement;
 	let scrollProgress = 0;
@@ -53,11 +54,8 @@
 					political life through technology and open data. We curate, analyze and visualize any
 					relevant data to make democracy more open and more transparent, encouraging people to
 					express their opinions and make better decisions. Our team is comprised of the same folks
-					behind <a
-						class="text-ultramarine hover:underline"
-						href="https://punchup.world"
-						target="_blank"
-						rel="noreferrer noopener">Punch Up</a
+					behind <ExternalLink class="text-ultramarine hover:underline" href="https://punchup.world"
+						>Punch Up</ExternalLink
 					>, a data storytelling consulting and studio.
 				</p>
 			</div>

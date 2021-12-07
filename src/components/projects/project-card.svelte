@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ExternalLink from '../external-link.svelte';
+
 	export let title: string;
 	export let date: string;
 	export let tags: string[] = [];
@@ -6,7 +8,10 @@
 	export let href: string = '';
 </script>
 
-<a {href} class="relative flex flex-col lg:(flex-row space-x-12) -lg:space-y-6 items-center">
+<ExternalLink
+	{href}
+	class="relative flex flex-col lg:(flex-row space-x-12) -lg:space-y-6 items-center"
+>
 	{#if !href}
 		<div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-60">
 			<p class="typo-h1">COMING SOON...</p>
@@ -22,4 +27,4 @@
 			{/each}
 		</div>
 	</div>
-</a>
+</ExternalLink>
