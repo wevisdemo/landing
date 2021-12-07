@@ -13,7 +13,10 @@
 	/>
 
 	<Lottie
-		config={{ path: 'lotties/intro_desktop.json' }}
+		config={{
+			path: 'lotties/intro_desktop.json',
+			rendererSettings: { preserveAspectRatio: 'xMidYMid slice' }
+		}}
 		class="sticky top-0 -z-1 h-screen -mt-100vh"
 	/>
 
