@@ -2,7 +2,7 @@
 	import ProjectCard from './project-card.svelte';
 </script>
 
-<div class="bg-black px-3 py-36 md:py-48 text-white">
+<div id="projects" class="bg-black px-3 py-36 md:py-48 text-white">
 	<div class="max-w-screen-lg mx-auto space-y-12">
 		<ProjectCard
 			title="Know Your Rights หลักประกันสิทธิพลเมืองและสิทธิทางการเมืองที่ควรรู้"
