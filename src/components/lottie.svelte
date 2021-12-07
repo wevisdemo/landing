@@ -22,4 +22,4 @@
 	});
 </script>
 
-<div bind:this={container} />
+<div bind:this={container} class={$$props.class} />
