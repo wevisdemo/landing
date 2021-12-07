@@ -45,7 +45,7 @@
 		class="md:hidden"
 	/>
 
-	<div class="px-3 pb-36 md:(px-36 pb-48) mt-85vh">
+	<div class="px-3 pb-36 mt-75vh md:(px-36 pb-48 mt-85vh)">
 		<div class="max-w-md ml-auto space-y-24">
 			<div class="group">
 				<h1>Who we are</h1>
@@ -109,7 +109,7 @@
 
 <style>
 	.tagline {
-		@apply absolute mt-7 w-90vw left-5vw;
+		@apply absolute w-90vw left-5vw;
 	}
 
 	h1 {
