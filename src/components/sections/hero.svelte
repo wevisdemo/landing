@@ -1,48 +1,50 @@
 <script lang="ts">
 	import enterView from 'enter-view';
-	import type { AnimationItem } from 'lottie-web';
 	import { onMount } from 'svelte';
+	import BackgroundAnimation from '../background-animation.svelte';
 	import Lottie from '../lottie.svelte';
 
 	let container: HTMLDivElement;
-	let animation: AnimationItem;
-	let framePerPercentage = 0;
+	let scrollProgress = 0;
 
-	onMount(() => {
+	onMount(() =>
 		enterView({
 			selector: [container],
-			progress: function (el, progress) {
-				animation?.goToAndStop(Math.round(progress * framePerPercentage), true);
+			progress: (el, progress) => {
+				scrollProgress = progress;
 			},
 			offset: 1
-		});
-	});
+		})
+	);
 </script>
 
 <div class="relative flex flex-col" bind:this={container}>
 	<div class="sticky top-6 z-10 h-screen -mt-100vh pointer-events-none">
-		<Lottie config={{ path: 'lotties/animated_logo_black.json' }} class="ml-5vw w-32vw" />
+		<Lottie config={{ path: 'lotties/animated_logo_black.json' }} class="ml-5vw w-44vw md:w-32vw" />
 	</div>
 	<img
 		src="images/slogan_desktop.svg"
 		alt="WeVis: We visualise data for democracy"
-		class="absolute mt-8 mx-auto w-90vw left-5vw"
+		class="-md:hidden tagline mt-8"
+	/>
+	<img
+		src="images/slogan_mobile.svg"
+		alt="WeVis: We visualise data for democracy"
+		class="md:hidden tagline mt-7"
 	/>
 
-	<Lottie
-		config={{
-			path: 'lotties/intro_desktop.json',
-			autoplay: false,
-			rendererSettings: { preserveAspectRatio: 'xMidYMid slice' }
-		}}
-		class="sticky top-0 -z-1 h-screen -mt-100vh"
-		on:ready={({ detail }) => {
-			animation = detail;
-			framePerPercentage = animation.getDuration(true);
-		}}
+	<BackgroundAnimation
+		path="lotties/intro_desktop.json"
+		progress={scrollProgress}
+		class="-md:hidden"
+	/>
+	<BackgroundAnimation
+		path="lotties/intro_mobile.json"
+		progress={scrollProgress}
+		class="md:hidden"
 	/>
 
-	<div class="px-24 pb-48 mt-85vh">
+	<div class="px-4 md:px-24 pb-48 mt-85vh">
 		<div class="max-w-md ml-auto space-y-24">
 			<div class="group">
 				<h1>Who we are</h1>
@@ -90,6 +92,10 @@
 </div>
 
 <style>
+	.tagline {
+		@apply absolute mt-7 w-90vw left-5vw;
+	}
+
 	h1 {
 		@apply font-bold text-ultramarine;
 	}
