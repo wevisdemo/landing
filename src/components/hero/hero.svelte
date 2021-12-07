@@ -44,7 +44,7 @@
 		class="md:hidden"
 	/>
 
-	<div class="px-4 md:px-24 pb-48 mt-85vh">
+	<div class="px-3 pb-36 md:(px-36 pb-48) mt-85vh">
 		<div class="max-w-md ml-auto space-y-24">
 			<div class="group">
 				<h1>Who we are</h1>
