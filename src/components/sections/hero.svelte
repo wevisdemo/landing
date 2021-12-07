@@ -1,8 +1,25 @@
 <script lang="ts">
+	import enterView from 'enter-view';
+	import type { AnimationItem } from 'lottie-web';
+	import { onMount } from 'svelte';
 	import Lottie from '../lottie.svelte';
+
+	let container: HTMLDivElement;
+	let animation: AnimationItem;
+	let framePerPercentage = 0;
+
+	onMount(() => {
+		enterView({
+			selector: [container],
+			progress: function (el, progress) {
+				animation?.goToAndStop(Math.round(progress * framePerPercentage), true);
+			},
+			offset: 1
+		});
+	});
 </script>
 
-<div class="relative flex flex-col">
+<div class="relative flex flex-col" bind:this={container}>
 	<div class="sticky top-6 z-10 h-screen -mt-100vh pointer-events-none">
 		<Lottie config={{ path: 'lotties/animated_logo_black.json' }} class="ml-5vw w-32vw" />
 	</div>
@@ -15,9 +32,14 @@
 	<Lottie
 		config={{
 			path: 'lotties/intro_desktop.json',
+			autoplay: false,
 			rendererSettings: { preserveAspectRatio: 'xMidYMid slice' }
 		}}
 		class="sticky top-0 -z-1 h-screen -mt-100vh"
+		on:ready={({ detail }) => {
+			animation = detail;
+			framePerPercentage = animation.getDuration(true);
+		}}
 	/>
 
 	<div class="px-24 pb-48 mt-85vh">
