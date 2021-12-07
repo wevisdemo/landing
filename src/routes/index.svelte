@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Lottie from '../components/lottie.svelte';
+</script>
+
 <h1 class="typo-h1">h1</h1>
 <h1 class="typo-h1 font-black">h1</h1>
 <h2 class="typo-h2">h2</h2>
@@ -14,3 +18,5 @@
 <h1 class="typo-h1 font-black text-ultramarine">ultramarine</h1>
 <h1 class="typo-h1 font-black text-mint bg-black">mint</h1>
 <h1 class="typo-h1 font-black text-white bg-black">white</h1>
+
+<Lottie config={{ path: 'lotties/intro_dektop.json' }} />
