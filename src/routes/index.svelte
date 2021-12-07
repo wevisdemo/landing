@@ -1,2 +1,8 @@
-<h1 class="text-2xl font-bold">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1 class="typo-h1">h1</h1>
+<h1 class="typo-h1 font-black">h1</h1>
+<h2 class="typo-h2">h2</h2>
+<h2 class="typo-h2 font-black">h2</h2>
+<p>p1</p>
+<p class="font-black">p1</p>
+<p class="typo-p2">p2</p>
+<p class="typo-p2 font-black">p2</p>
