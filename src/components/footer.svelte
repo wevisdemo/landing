@@ -26,7 +26,7 @@
 				/>
 			</svg>
 		</ExternalLink>
-		<ExternalLink href="https://twitter.com/wevisdemo"
+		<ExternalLink href="https://www.instagram.com/wevisdemo/"
 			><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect x="6" y="7" width="17" height="16" rx="5" fill="black" />
 				<path
@@ -36,7 +36,7 @@
 				<ellipse cx="19.8125" cy="10" rx="1.0625" ry="1" fill="white" />
 			</svg>
 		</ExternalLink>
-		<ExternalLink href="https://twitter.com/wevisdemo"
+		<ExternalLink href="https://medium.com/wevisdemo"
 			><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M16.1015 15.0993C16.1015 19.0199 12.9447 22.1983 9.05087 22.1983C5.15701 22.1983 2 19.0192 2 15.0993C2 11.1793 5.15677 8 9.05087 8C12.945 8 16.1015 11.1786 16.1015 15.0993ZM23.8363 15.0993C23.8363 18.7897 22.2579 21.7827 20.3108 21.7827C18.3638 21.7827 16.7854 18.7897 16.7854 15.0993C16.7854 11.4088 18.3636 8.41586 20.3106 8.41586C22.2577 8.41586 23.836 11.4078 23.836 15.0993H23.8363ZM27 15.0993C27 18.405 26.445 21.0865 25.7601 21.0865C25.0752 21.0865 24.5204 18.4057 24.5204 15.0993C24.5204 11.7928 25.0755 9.11198 25.7601 9.11198C26.4447 9.11198 27 11.7925 27 15.0993Z"
