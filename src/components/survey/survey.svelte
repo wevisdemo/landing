@@ -3,14 +3,18 @@
 	import Lottie from '../lottie.svelte';
 </script>
 
-<div class="relative">
-	<Lottie config={{ path: 'lotties/survey.json' }} />
+<div class="flex relative min-h-72">
+	<Lottie
+		config={{
+			path: 'lotties/survey.json',
+			rendererSettings: { preserveAspectRatio: 'xMidYMid slice' }
+		}}
+		class="flex-1"
+	/>
 	<div
 		class="absolute inset-0 flex flex-col justify-center items-center space-y-2 md:space-y-4 px-3"
 	>
-		<h2 class="typo-h2 md:typo-h1 font-black text-white text-center">
-			ประชาธิปไตยของคุณหน้าตาแบบไหน?
-		</h2>
+		<h2 class="typo-h1 font-black text-white text-center">ประชาธิปไตยของคุณหน้าตาแบบไหน?</h2>
 		<ExternalLink
 			href="#"
 			class="flex flex-row items-center space-x-3 bg-mint px-6 py-2 filter hover:brightness-120"
