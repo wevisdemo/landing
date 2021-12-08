@@ -4,8 +4,8 @@
 	import Survey from '../components/survey/survey.svelte';
 	import Footer from '../components/footer.svelte';
 
-	const META_TITLE = 'WeVis';
-	const META_DESCRIPTION = 'We visualise data for democracy';
+	const META_TITLE = 'WeVis : We Visualise Data for Democracy';
+	const META_DESCRIPTION = 'a civic technology empowering people with open data';
 	const META_IMAGE = 'https://wevis.info/images/og.png';
 </script>
 
