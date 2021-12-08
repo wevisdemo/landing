@@ -56,7 +56,7 @@
 					express their opinions and make better decisions. Our team is comprised of the same folks
 					behind <ExternalLink class="text-ultramarine hover:underline" href="https://punchup.world"
 						>Punch Up</ExternalLink
-					>, a data storytelling consulting and studio.
+					>, a data storytelling consulting and studio, and friends.
 				</p>
 			</div>
 			<div class="group">
@@ -118,6 +118,10 @@
 
 	h2 {
 		@apply typo-h1 font-black;
+	}
+
+	p {
+		@apply typo-h2;
 	}
 
 	.group {
