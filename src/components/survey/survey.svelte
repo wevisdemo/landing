@@ -16,7 +16,7 @@
 	>
 		<h2 class="typo-h1 font-black text-white text-center">ประชาธิปไตยของคุณหน้าตาแบบไหน?</h2>
 		<ExternalLink
-			href="https://form.typeform.com/to/AEK0Oumo"
+			href="https://airtable.com/shrDeFY3dKCT0e4C4"
 			class="flex flex-row items-center space-x-3 bg-mint px-6 py-2 filter hover:brightness-120"
 		>
 			<span>ร่วมแชร์</span>
