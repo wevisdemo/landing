@@ -5,8 +5,22 @@
 <div id="projects" class="bg-black px-3 py-36 md:py-48 text-white">
 	<div class="max-w-screen-lg mx-auto space-y-12">
 		<ProjectCard
+			title="Re-Constitution รัฐธรรมนูญไทยฉบับประชาชน (อ่านง่ายๆ)"
+			date="7 Feb 2022"
+			image="https://reconstitution.wevis.info/sharer/default.png"
+			tags={['#Constitution', '#Exploratory']}
+			href="https://reconstitution.wevis.info/"
+		/>
+		<ProjectCard
+			title="They Work for Us ติดตามและตรวจสอบการทำงานของ ‘ผู้แทน’ ในสภา"
+			date="7 Feb 2022"
+			image="https://theyworkforus.wevis.info/seo/share/default.png"
+			tags={['#Parliament', '#Exploratory']}
+			href="https://theyworkforus.wevis.info/"
+		/>
+		<ProjectCard
 			title="CONstitution LAB ห้องออกแบบรัฐธรรมนูญ"
-			date="Oct 04, 2021"
+			date="4 Oct 2021"
 			image="https://conlab.conlabth.com/og-images/default.png"
 			tags={['#Quiz', '#Exploratory']}
 			href="https://conlab.conlabth.com/"
